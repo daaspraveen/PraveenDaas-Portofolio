@@ -7,7 +7,7 @@ body{background-color:rgb(10, 10, 27); width: 100%;margin-bottom: 0;padding-bott
     font-family: 'Ysabeau Infant', sans-serif,
                     'Courier New', Courier, monospace}
 
-.background-video{object-fit: 100% 100%;position: fixed;z-index: -1;width: 100vw;opacity: 50%;}
+.background-video{object-fit: 100% 100%;position: fixed;z-index: -1;width: 100vw; height:100vh;opacity: 50%;}
 
 header{width: 100%;display: block;position:fixed;z-index: 1;}
 nav{background-color: rgb(21, 21, 65); display: flex; justify-content: space-around;align-items: center;
