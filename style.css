@@ -1,0 +1,95 @@
+*{margin: 0;padding: 0;box-sizing: border-box;line-height: 1cm;
+  scroll-behavior:smooth;}
+
+
+body{background-color:rgb(10, 10, 27); width: 100%;margin-bottom: 0;padding-bottom: 0;
+    color: antiquewhite;
+    font-family: 'Ysabeau Infant', sans-serif,
+                    'Courier New', Courier, monospace}
+
+.background-video{object-fit: 100% 100%;position: fixed;z-index: -1;width: 100vw;opacity: 50%;}
+
+header{width: 100%;display: block;position:fixed;z-index: 1;}
+nav{background-color: rgb(21, 21, 65); display: flex; justify-content: space-around;align-items: center;
+    height: fit-content;flex-wrap: wrap;}
+nav ul{display: flex;justify-content: center;align-items: center;}
+nav ul li{list-style: none;margin: 10px 20px;
+        >a{text-decoration: none;color: rgb(115, 130, 173);font-size: 1.05rem;font-weight: bold;
+            display: inline-block;position: relative;} 
+        >a:after{content: '';position: absolute;width: 100%;
+            bottom: 0;left: 0;height: 2px;
+            transform: scaleX(0);transform-origin: bottom right;
+            transition: transform 0.25s ease-out;}
+        >a:hover::after{transform: scaleX(1);transform-origin: bottom left;
+            border-bottom:2px solid rgb(212, 78, 78);} }
+
+
+nav .left h3 {font-size: 1.2rem;color: aliceblue;}
+nav .right{overflow:hidden;height: 50px;
+        .imp-contact{background-color: rgba(255, 0, 0, 0.684);padding: 0px 5px;border-radius: 15px;
+            >a{color: rgba(255, 255, 255, 0.669);} }
+}
+
+#home {display: flex;justify-content: space-around;align-items: center; padding-top: 100px;}
+
+section .left{display:block;margin-left:100px ;height: auto;padding-left: 10px;
+    >h1{font-size: 2rem;color: whitesmoke;}}
+.left #myname{font-size: 2.5rem;color: rgb(56, 142, 192);}
+.left div h1{font-size: 2rem; color: whitesmoke;margin: 30px 0px;}
+.left #typed_animate{font-weight: bold;font-size: 2.5rem;color:rgb(139, 58, 239)}
+
+section .right{margin-right: 20px;
+     >img{width: 40vw;;margin-top: 30px;
+            filter: drop-shadow(2px 8px 10px lightblue); } 
+    }
+
+
+.headings {margin: auto;width: 100%;}
+section { .heading {font-size: 1.2rem;margin: auto;text-align: center;width: 50%;border-bottom: 2px solid rgba(41, 41, 150, 0.65);padding-top: 50px;}
+    }
+.topic p{font-size: 1rem;width: 60%;margin: auto;padding-top: 20px;color: rgb(240, 199, 65);text-indent: 10px;text-align: justify;}
+.heading >h2{color: rgb(75, 207, 156);}
+
+.skills h1{margin: auto;width: 150px;text-align: center;padding-top: 30px;border-bottom:2px solid rgba(41, 41, 150, 0.65) ;margin-bottom: 20px;}
+.skills .sideheading,.skills ul{margin-left: 20%;}
+.sideheading{font-size: 1.3rem;width: 80%;margin: auto;padding:20px 0px 10px 0px;}
+.skills ul{border: 1px seagreen solid;border-radius: 25px;padding: 20px;width: 60%;}
+
+.skills ul li{list-style: none;text-align: justify; padding-bottom: 15px;
+    >h2{font-size: 1.15rem;font-variant-caps: small-caps;color: rgb(145, 67, 218); }
+    >p{text-indent: 12px;}}
+
+#projects{width: 50%;margin: auto;  }
+#projects .project{padding-top: 30px;margin: 5px;
+    >h3 a{text-decoration: none;color: palevioletred;}
+    >h3 a:hover{color: rgb(104, 167, 196);font-size: 1.3rem;border-bottom: 2px solid rgb(52, 160, 210);}
+    >p {text-indent: 50px; }
+}
+
+
+#contact{margin-top: 30px;}
+form {width: 40%;margin: auto;margin-top: 30px;
+        display: block;background-color: rgb(63, 84, 124);border-radius: 30px;padding: 20px 30px;}
+form div{margin: auto;width: 70%;}
+form input{width: 80%;margin-left: 50px;background-image: linear-gradient(to top,grey,lightgrey);
+    border: 1px solid black;border-radius: 10px;} 
+.message{position: relative;top: -50%;}
+form textarea{width: 80%;margin-left: 50px;margin-bottom: 10px;background-image: linear-gradient(to top,grey,lightgrey);
+    border: 1px solid black; border-radius: 10px;}
+form button{width: 70px;margin-left: 40%;margin-right: auto;border-radius: 10px;background-color: rgb(118, 140, 217);
+    :active{background-color: white;}
+    :hover{background-color: red;color: white;border-radius: inherit;}    }
+
+
+footer{background-image: linear-gradient(to top,rgb(75, 63, 119),rgb(36, 77, 149));margin: 30px 0px 0px;padding: 40px 0px 0px; }
+footer *{display: flex;justify-content: center;margin: 5px 0px;}
+.das-logo a img{width:100px;border-radius: 50%;} 
+.shortcuts{justify-content: center;gap: 50px;margin-bottom: 10px;
+    >a{color: rgb(91, 155, 177);text-decoration: none;}
+    >a:hover{color: orange;font-size:1.05em;border-bottom: 2px solid orange;width: fit-content; } 
+}
+.social-logos *{width: 30px;height: fit-content;display: flex;justify-content: center;}
+.social-logos {gap: 30px;
+    >a img:hover{border:2px solid skyblue;border-radius:50%;background-color: skyblue;} }
+
+.copyrights{color: rgb(189, 189, 189);}
