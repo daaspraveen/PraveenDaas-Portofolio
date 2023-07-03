@@ -7,7 +7,7 @@ body{background-color:rgb(10, 10, 27); width: 100%;margin-bottom: 0;padding-bott
     font-family: 'Ysabeau Infant', sans-serif,
                     'Courier New', Courier, monospace}
 
-.background-video{object-fit: contain; position: fixed;z-index: -1; height:100vh;opacity: 50%;left:0;top:0;}
+.background-video{object-fit:contain;position: fixed;z-index: -1;opacity: 50%;height: 100vh;left: 0;top: 0;}
 
 header{width: 100%;display: block;position:fixed;z-index: 1;}
 nav{background-color: rgb(21, 21, 65); display: flex; justify-content: space-around;align-items: center;
@@ -79,7 +79,12 @@ form textarea{width: 80%;margin-left: 50px;margin-bottom: 10px;background-image:
 form button{width: 70px;margin-left: 40%;margin-right: auto;border-radius: 10px;background-color: rgb(118, 140, 217);
     :active{background-color: white;}
     :hover{background-color: red;color: white;border-radius: inherit;}    }
-
+.call-msg{width: 20%;margin: auto;margin-top: 30px;
+    >h4{text-align: center;}
+    >a{display: flex;justify-content:center;align-items:center;gap: 5px;color: orange;text-decoration: none;}
+    >a h4:hover{color: skyblue;;}
+    >a img{width: 30px;}
+    >a img:hover{border:2px solid orange;border-radius:50%;background-color: orange;} }
 
 footer{background-image: linear-gradient(to top,rgb(75, 63, 119),rgb(36, 77, 149));margin: 30px 0px 0px;padding: 40px 0px 0px; }
 footer *{display: flex;justify-content: center;margin: 5px 0px;}
