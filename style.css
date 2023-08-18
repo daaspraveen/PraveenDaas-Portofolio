@@ -1,9 +1,11 @@
 *{margin: 0;padding: 0;box-sizing: border-box;line-height: 1cm;
-  scroll-behavior:smooth;}
+  scroll-behavior:smooth;
+  
+}
 
 
 body{background-color:rgb(10, 10, 27); width: 100%;margin-bottom: 0;padding-bottom: 0;
-    color: antiquewhite;
+    color: antiquewhite;cursor:auto;
     font-family: 'Ysabeau Infant', sans-serif,
                     'Courier New', Courier, monospace}
 
@@ -30,15 +32,21 @@ nav .right{overflow:hidden;height: 50px;
             >a{color: rgba(255, 255, 255, 0.669);} }
 }
 
-#home {display: flex;justify-content: space-around;align-items: center; padding-top: 100px;}
+#home {display: flex;justify-content: space-around;align-items: center; padding-top: 100px;min-height: 50vh;
+    max-height: 100vh;width: 100vw;text-overflow: ellipsis;}
+section .left{min-height:50vh;display:block;margin-left:15%;width: auto;height:auto;padding: 30px 0px 0px 10px;
+    }
+section .left h1{width: 35vw;color: whitesmoke;margin: 30px 0px;}
+#home .left #myname{color: rgb(56, 142, 192);}
+.left #typed_animate{width: 50%;font-weight: bold;color:rgb(139, 58, 239);}
+@media screen and (max-width:730px){
+    section .left h1{font-size: 1.5rem;margin: 5px 0px};
+    }
+@media screen and (min-width:730px){
+    section .left h1{font-size: 2rem;margin: 15px 0px};
+    }
 
-section .left{display:block;margin-left:100px ;height: auto;padding-left: 10px;
-    >h1{font-size: 2rem;color: whitesmoke;}}
-.left #myname{font-size: 2.5rem;color: rgb(56, 142, 192);}
-.left div h1{font-size: 2rem; color: whitesmoke;margin: 30px 0px;}
-.left #typed_animate{font-weight: bold;font-size: 2.5rem;color:rgb(139, 58, 239)}
-
-section .right{margin-right: 20px;
+section .right{padding-right: 15%;
      >img{width: 40vw;;margin-top: 30px;
             filter: drop-shadow(2px 8px 10px lightblue); } 
     }
@@ -71,11 +79,21 @@ section { .heading {font-size: 1.2rem;margin: auto;text-align: center;width: 50%
 form {width: 40%;margin: auto;margin-top: 30px;
         display: block;background-color: rgb(63, 84, 124);border-radius: 30px;padding: 20px 30px;}
 form div{margin: auto;width: 70%;}
-form input{width: 80%;margin-left: 50px;background-image: linear-gradient(to top,grey,lightgrey);
-    border: 1px solid black;border-radius: 10px;} 
-.message{position: relative;top: -50%;}
-form textarea{width: 80%;margin-left: 50px;margin-bottom: 10px;background-image: linear-gradient(to top,grey,lightgrey);
-    border: 1px solid black; border-radius: 10px;}
+@media screen and (min-width:730px) {
+    form input{width: 80%;margin-left: 50px;background-image: linear-gradient(to top,grey,lightgrey);
+        border: 1px solid black;border-radius: 10px;} 
+    .message{position: relative;top: -50%;}
+    form textarea{width: 80%;margin-left: 50px;margin-bottom: 10px;background-image: linear-gradient(to top,grey,lightgrey);
+        border: 1px solid black; border-radius: 10px;}
+}
+@media screen and (max-width:730px) {
+    form input{width: 100%;margin-left: 0px;background-image: linear-gradient(to top,grey,lightgrey);
+        border: 1px solid black;border-radius: 10px;} 
+    .message{position: relative;top: -50%;}
+    form textarea{width: 100%;margin-left: 0px;margin-bottom: 10px;background-image: linear-gradient(to top,grey,lightgrey);
+        border: 1px solid black; border-radius: 10px;}
+}
+
 form button{width: 70px;margin-left: 40%;margin-right: auto;border-radius: 10px;background-color: rgb(118, 140, 217);
     :active{background-color: white;}
     :hover{background-color: red;color: white;border-radius: inherit;}    }
@@ -87,7 +105,7 @@ form button{width: 70px;margin-left: 40%;margin-right: auto;border-radius: 10px;
     >a img:hover{border:2px solid orange;border-radius:50%;background-color: orange;} }
 
 footer{background-image: linear-gradient(to top,rgb(75, 63, 119),rgb(36, 77, 149));margin: 30px 0px 0px;padding: 40px 0px 0px; }
-footer *{display: flex;justify-content: center;margin: 5px 0px;}
+footer *{display: flex;justify-content: center;margin: 5px 0px;width: 100%;}
 .das-logo a img{width:100px;border-radius: 50%;} 
 .shortcuts{justify-content: center;gap: 50px;margin-bottom: 10px;
     >a{color: rgb(91, 155, 177);text-decoration: none;}
