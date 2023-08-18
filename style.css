@@ -1,11 +1,10 @@
 *{margin: 0;padding: 0;box-sizing: border-box;line-height: 1cm;
   scroll-behavior:smooth;
-  
 }
 
 
-body{background-color:rgb(10, 10, 27); width: 100%;margin-bottom: 0;padding-bottom: 0;
-    color: antiquewhite;cursor:auto;overflow:hidden;
+body{background-color:rgb(10, 10, 27); width: 100vw;margin-bottom: 0;padding-bottom: 0;
+    color: antiquewhite;cursor:auto;
     font-family: 'Ysabeau Infant', sans-serif,
                     'Courier New', Courier, monospace}
 
@@ -33,7 +32,7 @@ nav .right{overflow:hidden;height: 50px;
 }
 
 #home {display: flex;justify-content: space-around;align-items: center; padding-top: 100px;min-height: 50vh;
-    max-height: 100vh;width: 100vw;text-overflow: ellipsis;}
+    max-height: 100vh;width: 98vw;text-overflow: ellipsis;}
 section .left{min-height:50vh;display:block;margin-left:15%;width: auto;height:auto;padding: 30px 0px 0px 10px;
     }
 section .left h1{width: 35vw;color: whitesmoke;margin: 30px 0px;}
@@ -46,7 +45,7 @@ section .left h1{width: 35vw;color: whitesmoke;margin: 30px 0px;}
     section .left h1{font-size: 2rem;margin: 15px 0px};
     }
 
-section .right{padding-right: 15%;
+section .right{padding-right: 15%;width: 48%;
      >img{width: 40vw;;margin-top: 30px;
             filter: drop-shadow(2px 8px 10px lightblue); } 
     }
@@ -68,7 +67,7 @@ section { .heading {font-size: 1.2rem;margin: auto;text-align: center;width: 50%
     >p{text-indent: 12px;}}
 
 #projects{width: 50%;margin: auto;  }
-#projects .project{padding-top: 30px;margin: 5px;
+#projects .project{padding-top: 30px;margin: 5px;border-bottom: 2px solid white;
     >h3 a{text-decoration: none;color: palevioletred;}
     >h3 a:hover{color: rgb(104, 167, 196);font-size: 1.3rem;border-bottom: 2px solid rgb(52, 160, 210);}
     >p {text-indent: 50px; }
@@ -107,9 +106,9 @@ form button{width: 70px;margin-left: 40%;margin-right: auto;border-radius: 10px;
 footer{background-image: linear-gradient(to top,rgb(75, 63, 119),rgb(36, 77, 149));margin: 30px 0px 0px;padding: 40px 0px 0px; }
 footer *{display: flex;justify-content: center;margin: 5px 0px;width: 100%;}
 .das-logo a img{width:100px;border-radius: 50%;} 
-.shortcuts{justify-content: center;gap: 50px;margin-bottom: 10px;
+.shortcuts{display: flex;justify-content: space-around;margin-bottom: 10px;
     >a{color: rgb(91, 155, 177);text-decoration: none;}
-    >a:hover{color: orange;font-size:1.05em;border-bottom: 2px solid orange;width: fit-content; } 
+    >a:hover{color: orange;} 
 }
 .social-logos *{width: 30px;height: fit-content;display: flex;justify-content: center;}
 .social-logos {gap: 30px;
