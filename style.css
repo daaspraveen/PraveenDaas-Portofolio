@@ -69,7 +69,7 @@ section { .heading {font-size: 1.2rem;margin: auto;text-align: center;width: 50%
 #projects{width: 50%;margin: auto;  }
 #projects .project{padding-top: 30px;margin: 5px;
     >h3 a{text-decoration: none;color: palevioletred;}
-    >h3 a:hover{color: rgb(104, 167, 196);font-size: 1.3rem;border-bottom: 2px solid rgb(52, 160, 210);}
+    >h3 a:hover{color: rgb(104, 167, 196);font-size: 1.3rem;border-bottom: 2px solid white;}
     >p {text-indent: 50px; }
 }
 
